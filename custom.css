@@ -1,0 +1,174 @@
+.navbar-3d {
+  background-color: #007bff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.navbar-3d .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-3d .nav-link:hover {
+  color: #ffdd57;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+h2 {
+  color: #007bff;
+}
+
+h4 {
+  color: #007bff;
+}
+/* Navbar 3D */
+.navbar-3d {
+  background-color: #007bff; /* เปลี่ยนสีพื้นหลังตามต้องการ */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-3d .nav-link {
+  transition: transform 0.3s;
+}
+
+.navbar-3d .nav-link:hover {
+  transform: translateY(-3px);
+}
+
+/* Card styles */
+.card {
+  border-radius: 10px; /* มุมโค้งมน */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s; /* เพิ่มเอฟเฟคการขยาย */
+}
+
+.card:hover {
+  transform: scale(1.05); /* ขยายเมื่อ hover */
+}
+
+/* Text styles */
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+/* Container styles */
+.container {
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .card-title {
+      font-size: 1.2rem;
+  }
+
+  .card-text {
+      font-size: 0.9rem;
+  }
+}
+button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+button:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+.popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.popup.show {
+  transform: scale(1);
+  opacity: 1;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  z-index: 1000;
+}
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+  .container {
+      grid-template-columns: 1fr;
+  }
+}
+.popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.popup.show {
+  transform: scale(1);
+  opacity: 1;
+}
+.logo-text {
+  font-size: 1.5rem; /* ขนาดฟอนต์ */
+  font-weight: bold; /* หนักของฟอนต์ */
+  color: whitesmoke; /* สีของข้อความ */
+  font-family: 'Arial', sans-serif; /* ฟอนต์ที่ต้องการ */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* เงาสำหรับข้อความ */
+  padding: 10px 15px; /* เพิ่มพื้นที่รอบข้อความ */
+}
+body {
+  background-image: url('images/bg2.jpg'); /* เปลี่ยนให้เป็น URL ของภาพที่คุณใช้ */
+  background-size: cover; /* ทำให้ภาพขยายเต็มจอ */
+  background-position: center; /* จัดให้อยู่กลาง */
+  background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+  height: 100vh; /* ให้ความสูงของ body เต็มหน้าจอ */
+  margin: 0; /* ลบ margin ของ body */
+  color: #000; /* เปลี่ยนสีฟอนต์เป็นสีดำ */
+  font-family: 'Arial', sans-serif; /* เปลี่ยนฟอนต์ตามที่ต้องการ */
+}
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff6347;
+  transform: scale(1.1);
+}
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+

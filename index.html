@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocabWorld</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet"> <!-- CSS แบบกำหนดเอง -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        /* CSS สำหรับ Navbar แบบ 3D */
+        .navbar-3d {
+            perspective: 1000px;
+        }
+        .navbar-3d .navbar {
+            transform: translateZ(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        .navbar-3d:hover .navbar {
+            transform: translateZ(10px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Navbar แบบ 3D -->
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom navbar-3d">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a class="navbar-brand" href="#">
+                <span class="logo-text">VocabWorld</span>
+            </a>
+        </div>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 text-white">หน้าแรก</a></li>
+            <li><a href="business.html" class="nav-link px-2 text-white">หมวดธุรกิจ</a></li>
+            <li><a href="computing.html" class="nav-link px-2 text-white">หมวดคอมพิวเตอร์</a></li>
+            <li><a href="coding.html" class="nav-link px-2">หมวดการเขียนโปรแกรม</a></li>
+            <li><a href="Law.html" class="nav-link px-2">หมวดศัพท์กฎหมายดิจิทัล</a></li>
+        </ul>
+
+    
+    </header>
+    <!-- Navbar แบบ 3D -->
+             
+    <!-- ส่วนฮีโร่ -->
+    <div class="background"></div> <!-- สำหรับพื้นหลังสไลด์ -->       
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">ยินดีต้อนรับเข้าสู่ VocabWorld</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">แอพค้นหาความหมายของคำศัพท์ที่ครอบคลุมสำหรับนักศึกษาและผู้เชี่ยวชาญ เรียนรู้คำศัพท์ธุรกิจและคอมพิวเตอร์ได้อย่างง่ายดาย</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3" id="startButton">เริ่มต้นใช้งาน</button>
+                <a<button href = "glossary.html" type="button" class="btn btn-outline-secondary btn-lg px-4">เรียนรู้เพิ่มเติม</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ส่วนการ์ดสำหรับฟีเจอร์ -->
+    <div class="row text-center">
+        <div class="col-lg-4">
+            <div class="card feature-card">
+                <img src="images/business.jpg" class="card-img-top" alt="ธุรกิจ">
+                <div class="card-body">
+                    <h5 class="card-title">คำศัพท์ธุรกิจ</h5>
+                    <p class="card-text">สำรวจคำที่เกี่ยวข้องกับโลกธุรกิจ</p>
+                    <a href="business.html" class="btn btn-primary">ค้นหาตอนนี้</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card feature-card">
+                <img src="images/com.jpg" class="card-img-top" alt="คอมพิวเตอร์">
+                <div class="card-body">
+                    <h5 class="card-title">คำศัพท์คอมพิวเตอร์</h5>
+                    <p class="card-text">ค้นพบคำศัพท์ที่สำคัญเกี่ยวกับคอมพิวเตอร์</p>
+                    <a href="computing.html" class="btn btn-primary">ค้นหาตอนนี้</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card feature-card">
+                <img src="images/coding.jpg" class="card-img-top" alt="Coding">
+                <div class="card-body">
+                    <h5 class="card-title">ค้นหาคำศัพท์ Coding</h5>
+                    <p class="card-text">ค้นหาคำศัพท์ที่ต้องการในการเขียนโปรแกรมของเราของเรา</p>
+                    <a href="coding.html" class="btn btn-primary">ค้นหาตอนนี้</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card feature-card">
+                <img src="images/law.jpg" class="card-img-top" alt="Coding">
+                <div class="card-body">
+                    <h5 class="card-title">ค้นหาคำศัพท์เกี่ยวกับกฎหมายดิจิทัล</h5>
+                    <p class="card-text">ค้นหาคำศัพท์ที่ต้องการในกฎหมายดิจิทัล</p>
+                    <a href="coding.html" class="btn btn-primary">ค้นหาตอนนี้</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับเลือกหมวดหมู่ -->
+    <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="categoryModalLabel">เลือกหมวดหมู่</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>กรุณาเลือกหมวดหมู่เพื่อค้นหาคำศัพท์:</p>
+                    <div class="list-group">
+                        <a href="business.html" class="list-group-item list-group-item-action">หมวดธุรกิจ</a>
+                        <a href="computing.html" class="list-group-item list-group-item-action">หมวดคอมพิวเตอร์</a>
+                        <a href="coding.html" class="list-group-item list-group-item-action">หมวด Coding</a>
+                        <a href="Law.html" class="list-group-item list-group-item-action">หมวดศัพท์กฎหมายดิจิทัลสำหรับผู้ประกอบการ</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ส่วนท้าย -->
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">หน้าแรก</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">ธุรกิจ</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">คอมพิวเตอร์</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Coding</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">กฎหมาย Digital</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 BIMD THAITECH TEAM .CO (คอมธุรกิจ), Inc</p>
+    </footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('startButton').addEventListener('click', function() {
+        var modal = new bootstrap.Modal(document.getElementById('categoryModal'));
+        modal.show();
+    });
+</script>
+
+</body>
+</html>
